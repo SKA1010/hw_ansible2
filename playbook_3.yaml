@@ -1,0 +1,22 @@
+---
+    - name: Install apache2
+      become: true
+      package:
+        name: apache2
+        state: present
+    - name: "Make index.html"
+      template:
+        src: templates/index.html
+        dest: "/var/www/html"
+    - name: "Test 200"
+      ansible.builtin.uri:
+       url: http://localhost
+       status_code: 200
+    - name: Starting apache2
+      become: true
+      systemd:
+        name: apache2
+        enabled: true
+        masked: no
+    - name: Curl
+      command: "curl {{ ansible_facts.default_ipv4.address }}"
