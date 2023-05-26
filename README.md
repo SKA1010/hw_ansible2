@@ -27,7 +27,11 @@
 
 Модифицируйте плейбук из пункта 3, задания 1. В качестве приветствия он должен установить IP-адрес и hostname управляемого хоста, пожелание хорошего дня системному администратору.
 
-![image](https://github.com/SKA1010/hw_ansible2/assets/125235217/a89df565-1b9b-49c7-b62a-5bdf317944da)
+Playbook:
+
+![image](https://github.com/SKA1010/hw_ansible2/assets/125235217/5b3bd7e2-dbec-4ffc-a738-94acf04dad6d)
+
+Вывод на экран:
 
 ![image](https://github.com/SKA1010/hw_ansible2/assets/125235217/97e68bde-69d7-4061-8fdf-d9506aae03d9)
 
@@ -52,7 +56,11 @@
 
 **Решение 3**
 
+Скриншот выполнения
+
 ![image](https://github.com/SKA1010/hw_ansible2/assets/125235217/db9c7576-4f9c-4122-b37d-0a07f27eb3f3)
+
+Страница в браузере
 
 ![image](https://github.com/SKA1010/hw_ansible2/assets/125235217/04624ccd-df07-425e-8bc8-52b649128a8f)
 
