@@ -1,0 +1,12 @@
+- hosts: "all"
+  become: true
+  tasks:
+  - name: "install tuned" 
+    package:
+      name: tuned
+      state: present
+  - name: "starting tuned" 
+    systemd:
+      name: tuned
+      enabled: true
+      masked: no
