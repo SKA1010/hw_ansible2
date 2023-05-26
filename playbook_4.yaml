@@ -1,0 +1,17 @@
+---
+- hosts: "all"
+  become: true
+  gather_facts: true
+  vars:
+    greetings: Hello SysAdmin! Have a nice day!!!
+  tasks:
+    - name: Change /etc/motd
+      copy:
+        content:
+          - "{{ greetings }}"
+          - "{{ ansible_facts.default_ipv4.address}}"
+          - "{{ ansible_facts.hostname}}"
+        dest: /etc/motd
+        owner: root
+        group: root
+        mode: 0644
