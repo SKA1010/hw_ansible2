@@ -13,7 +13,14 @@
 
 **Решение 1**
 
+Ставим Apache Kafka
+
 ![image](https://github.com/SKA1010/hw_ansible2/assets/125235217/e8f4f6b1-329d-4897-8918-d0aec9617ec6)
+
+Ставим Tuned
+
+![image](https://github.com/SKA1010/hw_ansible2/assets/125235217/a0894a12-81c3-498f-a446-69576f14a75a)
+
 
 ## **Задание 2**
 Выполните действия, приложите файлы с модифицированным плейбуком и вывод выполнения.
